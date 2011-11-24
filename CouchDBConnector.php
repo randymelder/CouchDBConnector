@@ -59,8 +59,8 @@ class CouchDBConnector
 	 */
     public function __construct ($params)
     {
-        $this->host = $params['host'];
-        $this->port = $params['port'];
+        $this->setHost($params['host']);
+        $this->setPort($params['port']);
     }
     
     /**
