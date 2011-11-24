@@ -153,7 +153,7 @@ class CouchDBConnector
             return NULL;
         }
         $req = "{$method} {$url} HTTP/1.0\r\nHost: {$this->host}\r\n";
-        if (CouchDBConnector::DEBUG_ON) error_log(__FILE__.' line: ('.$req.')');
+		
         if($this->user || $this->pass)
             $req    .= 'Authorization: Basic '
                     .base64_encode($this->username.':'.$this->password)."\r\n";
@@ -231,7 +231,6 @@ class CouchDBConnector
     {
         $str = '';
         $arr = json_decode($json);
-        //error_log(__CLASS__.'::'.__FUNCTION__.' line: '.__LINE__."\njson: ".$json."\n\n");
         if (trim($json) == '{"rows":[]}')
             return "[['NULL', 0]]";
         
