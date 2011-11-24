@@ -1,0 +1,7 @@
+CouchDBConnector in its current form is a collection of helper libraries in various languages to quickly utilize the basics of CouchDBs RESTful interface.
+
+The objective is to include the basics of GET, PUT, POST, DELETE as well as working with named views.
+
+@author Randy Melder 
+@link   http://randymelder.com/
+
